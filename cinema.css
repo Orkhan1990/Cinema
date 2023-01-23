@@ -3,17 +3,22 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 10px;
 }
+
 body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
+
 }
+
 a {
   text-decoration: none;
   color: var(--white);
 }
+
 ul li {
   list-style: none;
 }
@@ -21,22 +26,28 @@ ul li {
 :root {
   --white: #ffff;
   --dark: #0000;
+  --red: #C00511;
+  --gray: #C4C4C4;
+
+
 }
 
 header {
-  min-height: 100vh;
+  min-height: 120vh;
 }
 
 .header_bg_img {
   background: url("./images/image1.png");
   background-position: top;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 120vh;
 }
+
 .header_bg_effect {
-  height: 100vh;
+  height: 100%;
   background: rgba(13, 13, 13, 0.77);
 }
+
 .header_navbar {
   max-width: 1171px;
   margin: 0px auto;
@@ -44,9 +55,11 @@ header {
   align-items: center;
   gap: 80px;
 }
+
 .header_navbar img {
   margin-top: 49px;
 }
+
 nav ul {
   display: flex;
   gap: 60px;
@@ -58,15 +71,18 @@ nav ul li a {
   font-size: 1.6rem;
   line-height: 19px;
 }
+
 nav {
   margin-top: 55px;
 }
+
 .header_search {
   display: flex;
   align-items: center;
   margin-right: 30px;
   gap: 7px;
 }
+
 .header_icons {
   display: flex;
   margin-top: 57px;
@@ -74,6 +90,7 @@ nav {
   gap: 28px;
   color: var(--white);
 }
+
 .header_search input {
   background: none;
   border: none;
@@ -83,10 +100,12 @@ nav {
   font-size: 1.4rem;
   line-height: 16px;
 }
+
 ::placeholder {
   color: var(--white);
   font-size: 1.4rem;
 }
+
 .fa-magnifying-glass {
   font-size: 1.4rem;
 }
@@ -108,6 +127,7 @@ nav {
   font-family: "Rubik", sans-serif;
   margin-bottom: 23px;
 }
+
 .header_content ul {
   display: flex;
   align-items: center;
@@ -117,9 +137,11 @@ nav {
   font-size: 1.8rem;
   line-height: 21px;
 }
+
 .comedy {
   position: relative;
 }
+
 .comedy::before {
   content: "";
   background: var(--white);
@@ -128,6 +150,7 @@ nav {
   position: absolute;
   left: -10px;
 }
+
 .comedy::after {
   content: "";
   background: var(--white);
@@ -136,6 +159,7 @@ nav {
   position: absolute;
   right: -10px;
 }
+
 .header_content p {
   width: 35%;
   font-weight: 300;
@@ -143,15 +167,154 @@ nav {
   line-height: 22px;
   margin-bottom: 45px;
 }
-.header_result{
-    gap:34px;
-    margin-bottom: 47px;
+
+.header_result {
+  gap: 34px;
+  margin-bottom: 47px;
 }
 
-.icon_and_range{
-    gap:10px;
+.icon_and_range {
+  gap: 10px;
 }
-.imdb_result{
-    display: flex;
-    align-items: center;
+
+.imdb_result {
+  display: flex;
+  align-items: center;
+}
+
+.imdb {
+  gap: 5px
+}
+
+.header_btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.two_header_btn {
+  display: flex;
+  align-items: center;
+  gap: 47px;
+}
+
+.btn1 {
+  padding: 14px 37px 15px 36px;
+  background: rgba(207, 0, 15, 0.9);
+  border-radius: 99px;
+  outline: none;
+  border: none;
+  color: var(--white);
+  gap: 14px;
+}
+
+.btn1 span {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 21px;
+}
+
+.btn1:hover {
+  background: var(--dark);
+}
+
+.btn2 {
+  padding: 14px 35px 15px 29px;
+  background: linear-gradient(262.15deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 0.3px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  border-radius: 99px;
+  color: var(--red);
+  display: flex;
+  gap: 11px;
+}
+
+.btn2 span {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 21px;
+}
+
+/* =======================MAIN CSS========================== */
+
+main {
+  background: rgba(13, 13, 13, 0.77);
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+section {
+  max-width: 1171px;
+  margin: 0 auto;
+
+}
+
+.section_one_header {
+  display: flex;
+  gap: 43px;
+  align-items: center;
+  color: var(--white);
+}
+
+.section_one_header span {
+  background: linear-gradient(90.03deg, #C00511 49.97%, rgba(192, 5, 17, 0) 92.25%);
+  width: 291px;
+  height: 6px;
+}
+
+.section_one_header h3 {
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 38px;
+}
+
+.link_all_video {
+  display: flex;
+  justify-content: end;
+  margin-top: 40px;
+}
+
+.link_all_video a {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 19px;
+  color: var(--gray)
+}
+
+.videos {
+  max-width: 1171px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
+  gap: 48px
+}
+
+.video {
+  min-width: 358px;
+  position: relative;
+}
+
+.video video {
+  width: 100%;
+  height: 243px;
+}
+
+.fa-x {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  color: var(--gray);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.video h2 {
+  margin-top: 23px;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 21px;
+  color:var(--white)
+}
+.video_title{
+  color:var(--red) !important;
 }

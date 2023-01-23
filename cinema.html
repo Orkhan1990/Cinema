@@ -4,24 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
     />
     <link rel="stylesheet" href="cinema.css" />
     <title>Document</title>
@@ -104,7 +98,7 @@
                 </svg>
                 <span>Subtitles</span>
               </div>
-              <div class="imdb_result">
+              <div class="imdb_result imdb">
                 <svg
                   width="6"
                   height="6"
@@ -117,27 +111,92 @@
                 <span>Imdb: 9.1/10</span>
               </div>
             </div>
-            <button>
-              <svg
-                width="12"
-                height="19"
-                viewBox="0 0 12 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.54455 18.8278L1.67587 18.7209L11.4622 10.6459C11.7936 10.3728 12 9.96313 12 9.50594C12 9.04875 11.7874 8.63906 11.4622 8.36594L1.69463 0.296875L1.53205 0.160312C1.37572 0.0593748 1.18812 0 0.988015 0C0.443981 0 0 0.439375 0 0.985625V18.0144C0 18.5606 0.443981 19 0.988015 19C1.19437 19 1.38822 18.9347 1.54455 18.8278Z"
-                  fill="white"
-                />
-              </svg>
-              Watch Now
-            </button>
-            <button><span>+</span> Add List</button>
+
+            <div class="two_header_btn">
+              <button class="header_btn btn1">
+                <svg
+                  width="12"
+                  height="19"
+                  viewBox="0 0 12 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.54455 18.8278L1.67587 18.7209L11.4622 10.6459C11.7936 10.3728 12 9.96313 12 9.50594C12 9.04875 11.7874 8.63906 11.4622 8.36594L1.69463 0.296875L1.53205 0.160312C1.37572 0.0593748 1.18812 0 0.988015 0C0.443981 0 0 0.439375 0 0.985625V18.0144C0 18.5606 0.443981 19 0.988015 19C1.19437 19 1.38822 18.9347 1.54455 18.8278Z"
+                    fill="white"
+                  />
+                </svg>
+                <span>Watch Now</span>
+              </button>
+              <button class="header_btn btn2">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 1V17"
+                    stroke="#C00511"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M1 9H17"
+                    stroke="#C00511"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Add List</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </header>
-    <main></main>
+
+    <!-- ===================HEADER FINISH================================== -->
+    <main>
+      <section>
+        <div class="section_one_header">
+          <h3>Continue Watching</h3>
+          <span class="line"></span>
+        </div>
+        <div class="link_all_video">
+          <a href="">View all</a>
+        </div>
+        <div class="videos">
+          <div class="video">
+            <video
+              controls
+              src="./videos/Jumanji_ I was a little boy.mp4"
+            ></video>
+            <i class="fa-solid fa-x"></i>
+            <h2 class="video_title">Jumanji</h2>
+          </div>
+          <div class="video">
+            <video
+              controls
+              src="./videos/Will You Marry Me Again_ - Marry Me _ RomComs.mp4"
+            ></video>
+            <i class="fa-solid fa-x"></i>
+            <h2>Marry Me</h2>
+          </div>
+          <div class="video">
+            <video
+              controls
+              src="./videos/KIMI _ Official Trailer _ HBO Max.mp4"
+            ></video>
+            <i class="fa-solid fa-x"></i>
+            <h2>Kimi (HBO Max)</h2>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <script src="./cinema.js"></script>
   </body>
