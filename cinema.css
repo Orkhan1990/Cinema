@@ -31,26 +31,26 @@ ul li {
 
 header {
   min-height: 120vh;
-}
-
-.header_bg_img {
   background: url("./images/image1.png");
   background-position: top;
   background-repeat: no-repeat;
-  height: 120vh;
+  background-size: cover;
 }
 
+
+
 .header_bg_effect {
-  height: 100%;
+  min-height: 120vh;
   background: rgba(13, 13, 13, 0.77);
 }
 
 .header_navbar {
-  max-width: 1171px;
-  margin: 0px auto;
+  max-width: 1170px;
+  margin-right:auto;
+  margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 116px;
 }
 
 .header_navbar img {
@@ -59,7 +59,7 @@ header {
 
 nav ul {
   display: flex;
-  gap: 60px;
+  gap: 50px;
 }
 
 nav ul li a {
@@ -108,10 +108,9 @@ nav {
 }
 
 .header_content {
-  max-width: 1171px;
-  margin: 0 auto;
-  /* background-color: red; */
-  height: 50vh;
+  max-width: 1170px;
+  margin-left:auto;
+  margin-right: auto;
   margin-top: 150px;
   color: var(--white);
 }
@@ -244,9 +243,10 @@ main {
   padding-top: 50px;
 }
 
-section {
-  max-width: 1171px;
-  margin: 0 auto;
+.first_section {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section_one_header {
@@ -254,6 +254,9 @@ section {
   gap: 43px;
   align-items: center;
   color: var(--white);
+}
+.second_section{
+  margin-top: 80px;
 }
 
 .section_one_header span {
@@ -286,7 +289,7 @@ section {
 }
 
 .videos {
-  max-width: 1171px;
+  max-width: 1170px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
   gap: 48px;
@@ -305,7 +308,7 @@ section {
 .fa-x {
   position: absolute;
   right: 15px;
-  top: 30px;
+  top: 45px;
   color: var(--gray);
   font-size: 1.1rem;
   cursor: pointer;
@@ -322,8 +325,16 @@ section {
   color: var(--red) !important;
 }
 
-.one {
-  margin-bottom: 80px;
+.scroll_section{
+  /* min-width: 1257px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  display: flex;
+  align-items: center;
+}
+.test{
+  display: flex;
+  align-items: center;
 }
 
 .film_images {
@@ -332,16 +343,9 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
   gap: 37px;
   margin-top: 32px;
-  position: relative;
+  /* position: relative; */
 }
-.arrow1{
-  position: absolute;
-  cursor: pointer;
-}
-.arrow1 .left{
-  left:-40px;
-  top:170px;
-}
+
 
 .film_image {
   min-width: 265px;
