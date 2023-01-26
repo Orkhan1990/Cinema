@@ -9,6 +9,7 @@ let bestComediesRightIcon = document.querySelector(
 );
 let actionAndAdventureLeftIcon=document.querySelector('#action_and_adventure_left_arrow');
 let actionAndAdventureRightIcon=document.querySelector('#action_and_adventure_right_arrow');
+let videos=document.querySelector('.videos');
 let imageUrl = "https://image.tmdb.org/t/p/w500";
 
 fetch(
@@ -168,3 +169,26 @@ fetch(
       }
     });
   });
+
+
+  fetch('./videosapi/video.json')
+  .then(resp=>resp.json())
+  .then(data=>{
+    console.log(data);
+    data.forEach(card=>{
+        videos.innerHTML+=
+        `
+        <div class="video">
+        <video
+          controls
+          src="${card.video}"
+        ></video>
+        <i class="fa-solid fa-x"></i>
+        <h2 id="${card.id}">${card.title}</h2>
+      </div>
+        `
+         for(let i=0;i<videos.children.length;i++){
+            
+         }
+    })
+  })
