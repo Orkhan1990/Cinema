@@ -342,11 +342,13 @@ main {
   display: flex;
   gap: 37px;
   margin-top: 32px;
+  overflow: hidden;
 }
 
 
 .film_image {
   min-width: 265px;
+  transition: 1s;
 }
 
 .film_image img {
