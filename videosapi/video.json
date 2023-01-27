@@ -2,16 +2,19 @@
     {
     "id":1,
     "title":"Jumanji",
-    "video":"../videos/Jumanji_ I was a little boy.mp4"
+    "video":"../videos/Jumanji_ I was a little boy.mp4",
+    "color":"red"
     },
     {
         "id":2,
         "title":"Marry Me",
-        "video":"../videos/Will You Marry Me Again_ - Marry Me _ RomComs.mp4"
+        "video":"../videos/Will You Marry Me Again_ - Marry Me _ RomComs.mp4",
+        "color":"white"
     },
     {
         "id":3,
         "title":"JKimi (HBO Max)",
-        "video":"../videos/KIMI _ Official Trailer _ HBO Max.mp4"
-        }
+        "video":"../videos/KIMI _ Official Trailer _ HBO Max.mp4",
+        "color":"white"
+    }
 ]

@@ -19,10 +19,10 @@ fetch(
   .then((data) => {
     console.log(data.results);
     data.results.forEach((element) => {
-      console.log(`${imageUrl}${element.poster_path}`);
+      console.log(`${imageUrl}${element.backdrop_path}`);
       popularMovies.innerHTML += `
         <div class="film_image">
-        <img src="${imageUrl}${element.poster_path}"/>
+        <img src="${imageUrl}${element.backdrop_path}"/>
         <h2>${element.title}</h2>
        </div>
         `;
@@ -184,11 +184,8 @@ fetch(
           src="${card.video}"
         ></video>
         <i class="fa-solid fa-x"></i>
-        <h2 id="${card.id}">${card.title}</h2>
+        <h2 class="${card.color}">${card.title}</h2>
       </div>
         `
-         for(let i=0;i<videos.children.length;i++){
-            
-         }
     })
   })
