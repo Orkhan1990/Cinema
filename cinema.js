@@ -36,7 +36,7 @@ fetch(
       }
     }
     setInterval(() => {
-      if (count < popularMovies.childNodes.length - 4) {
+      if (count < popularMovies.children.length - 4) {
         count++;
         slide();
       } else {

@@ -35,7 +35,7 @@ ul li {
 /* ==============================HEADER CSS================================ */
 
 header {
-  min-height: 100vh;
+  height: 100vh;
   background: url("./images/image1.png");
   background-position: top;
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@ header {
 
 
 .header_bg_effect {
-  min-height: 100%;
+  height: 100%;
   background: rgba(13, 13, 13, 0.77);
   padding-bottom: 100px;
 }
@@ -56,16 +56,26 @@ header {
   margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 116px;
+  /* justify-content: space-between; */
+  /* gap: 116px; */
+}
+
+.fa-bars{
+  display: none;
 }
 
 .header_navbar img {
   margin-top: 49px;
 }
 
+ nav{
+  margin-left: 10%;
+  margin-right: 10%;
+ }
 nav ul {
   display: flex;
   gap: 50px;
+ 
 }
 
 nav ul li a {
@@ -163,7 +173,7 @@ nav {
 }
 
 .header_content p {
-  width: 35%;
+  max-width: 445px;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 22px;
@@ -199,6 +209,9 @@ nav {
   align-items: center;
   gap: 47px;
 }
+.fa-play{
+  font-size: 1.8rem;
+}
 
 .btn1 {
   padding: 14px 37px 15px 36px;
@@ -231,6 +244,10 @@ nav {
   color: var(--red);
   display: flex;
   gap: 11px;
+}
+
+.fa-plus{
+  font-size: 2rem;
 }
 
 .btn2 span {
@@ -290,6 +307,7 @@ main {
   font-size: 1.6rem;
   line-height: 19px;
   color: var(--gray);
+  margin-bottom: 32px;
 }
 
 .videos {
@@ -297,6 +315,8 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
   gap: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .video {
@@ -339,6 +359,7 @@ main {
 
 .arrow {
   cursor: pointer;
+  color:var(--white)
 }
 
 
@@ -380,6 +401,10 @@ main {
   top: 15px;
 }
 
+.cover_all{
+  overflow-x: hidden;
+}
+
 .cover_all button {
   border-radius: 99px;
   background: var(--red);
@@ -410,7 +435,8 @@ footer {
   margin-right: auto;
   display: flex;
   align-items: center;
-  gap: 152px;
+  /* gap: 152px; */
+  justify-content: space-between;
 }
 
 .footer_logo {
@@ -458,4 +484,7 @@ footer {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
+}
+.search_icon{
+  display: none;
 }
