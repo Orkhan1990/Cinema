@@ -11,6 +11,10 @@
    nav ul {
       gap: 20px;
    }
+   .header_content{
+      margin-top: 80px;
+   }
+
 
    /* .header_content{
       padding-bottom: 20px;
@@ -25,9 +29,11 @@
       flex-direction: column;
       right: -500px;
       background: rgba(0, 0, 0, 0.5);
-      top: 100px;
+      top: 0px;
       padding: 20px 20px;
       width: 150px;
+      /* bottom: 73px; */
+      z-index: 1000;
 
    }
 
@@ -57,6 +63,12 @@
 
    .footer_list li a {
       font-size: 1.7rem;
+   }
+   .section_one_header h3{
+      font-size: 2rem;
+   }
+   .header_content{
+      margin-top: 80px;
    }
 
 }
@@ -148,6 +160,9 @@
    .link_all_video a{
       font-size: 1.5rem;
    }
+   .active{
+      right:0;
+   }
 
 
    .test{
@@ -194,7 +209,13 @@
       display: none;
    }
   
-  
+   .link_to_playmarkets{
+      margin-top: 18px;
+      padding-bottom: 91px;
+   }
+   .header_content {
+      margin-top: 10px;
+   }
 }
 
 @media screen and (max-width:320px) {

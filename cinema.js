@@ -1,5 +1,7 @@
 let popularMovies = document.querySelector("#popular_movies");
 let bestComedies = document.querySelector("#best_comedies");
+let barsIcon=document.querySelector('.fa-bars');
+let navList=document.querySelector('nav ul')
 let actionAndAdventure = document.querySelector("#action_and_adventure");
 let leftIcon = document.querySelector(".left");
 let rightIcon = document.querySelector(".right");
@@ -188,4 +190,8 @@ fetch(
       </div>
         `
     })
+  })
+
+  barsIcon.addEventListener('click',()=>{
+     navList.classList.toggle('active');
   })
